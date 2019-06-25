@@ -3,7 +3,33 @@ import logo from './logo.svg';
 import './App.css';
 import {Icon} from'antd';
 
-function App() {
+class App extends React.Component {
+  constructor(props){
+    super(props)
+this.state={
+  toggle1:true,
+  toggle2:true,
+  toggle3:true,
+
+
+}
+  }
+
+  hovercard1=()=>{
+    setTimeout(this.setState({toggle1: !this.state.toggle1}), 1000);
+  }
+
+  hovercard2=()=>{
+    setTimeout(this.setState({toggle2: !this.state.toggle2}), 1000);
+  }
+
+  hovercard3=()=>{
+    setTimeout(this.setState({toggle3: !this.state.toggle3}), 1000);
+    }
+
+  
+  render()
+  {
   return (
     <div className="App">
       <div style={{color:"white"}} className="appbar">
@@ -30,8 +56,116 @@ function App() {
       <Icon type="user" style={{fontSize:"30px",padding:"0px 20px"}}  />
       </div>
       </div>
+      <div>
+      <img src="https://imgix.bustle.com/uploads/image/2018/5/25/bc38e71b-cc6c-4261-b058-ed339d915310-sunrise_woman_beach.jpg?w=1020&h=574&fit=crop&crop=faces&auto=format&q=70" style={{width: "100%"}}/>
+      </div>
+      <div className="align">
+      <div className="cardZindex">
+        
+      <div className="card">
+         
+        <div className="headingCard">
+         <div style={{fontSize:"40px",padding:"5px"}}>WSPV</div><div> INDIA PVT LIMITED</div>
+        </div>
+        <div className="body">
+        <div style={{width:"1286.3px", height:"385px",padding:"0px 180px",display:"flex",flexDirection:"row" }}>
+        <div  style={{width:"643.14px", height:"385px",backgroundColor:"white",fontSize:"20px",fontFamily:" Oswald, sans-serif"
+,display:"flex",textAlign:"center",alignItems:"center"}}>fiuweeckjfwnfuhnkjnck
+        bkhwdbcfwknkcjnwlncofwknfioesdcklneoivnoiswmcnoijbcudciidcebucbuec
+        cbneubucjbnedcniendcidcj</div>
+        <div style={{display:"flex",flexDirection:"row",alignContent:"center",padding:"0px 100px"}}>
+        <div style={{display:"flex",flexDirection:"column",alignContent:"center",padding:"50px 50px",fontSize:"40px",justifyContent:"space-between"}}><Icon type="android" theme="filled" /><Icon type="apple" theme="filled" /><Icon type="windows" theme="filled" /></div>
+        <div style={{display:"flex",flexDirection:"column",alignContent:"center",fontSize:"40px",padding:"50px 0px",justifyContent:"space-between"}}>
+        <div>ANDROID</div>
+        <div>APPLE</div>
+        <div>WINDOWS</div>
+        </div>
+        </div>
+        </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div style={{display:"flex",justifyContent:"center"}}>
+      <div className="bottomCard">
+        <div className="card1" onMouseEnter={this.hovercard1} onMouseOut={this.hovercard1}>
+       About Us
+       <div style={{height:"2px",width:"20px",backgroundColor:"red"}}>
+         
+       </div>
+       {this.state.toggle1 ?<div>
+         To touch and change the life of people around the world
+       </div> :<div>Incorporated in 2003 as a clothing company with an intention to touch and change the lives of people around the world,WSPV was the vision of youngentrepreneurs Withcountless years of marketing,</div> }
+       
+        </div>
+
+        <div className="card1" onMouseEnter={this.hovercard2} onMouseOut={this.hovercard2}>
+       About Us
+       <div style={{height:"2px",width:"20px",backgroundColor:"red"}}>
+         
+       </div>
+       {this.state.toggle2? <div>
+         To touch and change the life of people around the world
+       </div> :<div>Our vision is quite simple. To be a global leader by helping people around the world become the very best they can be while they help others do the same</div> }
+      
+        </div>
+
+        <div className="card1" onMouseEnter={this.hovercard3} onMouseOut={this.hovercard3}>
+       About Us
+       <div style={{height:"2px",width:"20px",backgroundColor:"red"}}>
+         
+       </div>
+       {this.state.toggle3? <div>
+         To touch and change the life of people around the world
+       </div>:<div>Today’s nine-to-five job is not designed to make anyone wealthy. The only sure way to achieve financial success is to invest in your best asset: yourself. </div> }
+       
+        </div>
+        
+      </div>
+      </div>
+      <div style={{display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column"}}>
+      <div style={{width:"1390px",height:"226px",backgroundColor:"white"}}>
+      <div style={{fontSize:"50px",flexDirection:"row",display:"flex",justifyContent:"center"}}><div style={{borderBottom:"dashed black"}}>Our</div> <div style={{padding:" 0px 10px"}}>Brands</div> </div>
+      <div className="Ourbrands">
+      <Icon type="medium-circle" theme="filled" />
+      <div style={{height:"70px",width:"1px",borderRight:"dashed"}}></div>
+      <Icon type="smile" theme="filled" />
+      <div style={{height:"70px",width:"1px",borderRight:"dashed"}}></div>
+      <Icon type="tags" theme="filled" />
+      <div style={{height:"70px",width:"1px",borderRight:"dashed"}}></div>
+      <Icon type="zhihu-circle" theme="filled" />
+
+      </div>
+      </div>
+      </div>
+
+
+      <div style={{display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column",padding:"100px 0px 0px 0px"}}>
+      <div style={{width:"1390px",height:"513.34px",backgroundColor:"white"}}>
+      <div style={{fontSize:"50px",flexDirection:"row",display:"flex",justifyContent:"center"}}><div style={{borderBottom:"dashed black"}}>Our</div> <div style={{padding:" 0px 10px"}}>Products</div> </div>
+      <div className="Ourbrands">
+      <div className="product" >
+      <img style={{width:"255px",height:"380px",borderRadius:"10px"}} src="https://images.news18.com/ibnlive/uploads/2018/04/2018-Yamaha-R15-V3.0-Yellow.jpg"></img>
+      </div>
+      <div className="product" >
+      <img style={{width:"255px",height:"380px",borderRadius:"10px"}} src="https://news.maxabout.com/wp-content/uploads/2017/11/Royal-Enfield-Himalayan-650.jpg"></img>
+      </div>
+      <div className="product" >
+      <img style={{width:"255px",height:"380px",borderRadius:"10px"}} src="https://cdn.bmwblog.com/wp-content/uploads/2017/11/BMW-M5-E28-23.jpg"></img>
+      </div>
+      <div className="product">
+      <img style={{width:"255px",height:"380px",borderRadius:"10px"}} src="https://cartype.com/pics/3843/full/bmw_z4_mcoupe_fs1.jpg"></img>
+      </div>
+      <div className="product">
+      <img style={{width:"255px",height:"380px",borderRadius:"10px"}} src="https://i.sxdrv.com/images/5698c4e11a474.jpg"></img>
+      </div>
+
+      </div>
+      </div>
+      </div>
     </div>
   );
+  }
 }
 
 export default App;
