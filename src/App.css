@@ -155,6 +155,22 @@ display:flex;
 .product:hover{
   zoom:1.1;
 }
+.blackcard{
+  width:100vw;
+  height:268.81px;
+  background-color:black;
+  color: white; 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding:10px 0px;
+
+}
+.last{
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

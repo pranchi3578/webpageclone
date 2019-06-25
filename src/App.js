@@ -163,6 +163,51 @@ this.state={
       </div>
       </div>
       </div>
+      <div className="blackcard">
+          <div style={{justifyContent:"space-between",display:"flex",flexDirection:"column"}}>
+            <div style={{fontSize:"40px",fontFamily:"Oswald, sans-serif"}}>WSPV</div>
+            <div style={{fontSize:"10px",width:"248px",height: "63px"}}>297/7, Chandra Reddy, Building
+Opp. KEB (Opp.ANR Kalyanamamtapa)
+Anekal Road,Krishna Reddy Layout
+            </div>
+            <div style={{display:"flex",flexDirection:"row"}}>
+             <Icon type="mail" style={{marginLeft:"20px"}}/>
+             <div>travelwithme@mail.in</div>
+            </div>
+          </div>
+
+          <div className="last">
+          <div style={{fontSize:"40px",fontFamily:"Oswald, sans-serif"}}>QUICK LINKS</div>
+          <div  style={{fontSize:"12px",fontFamily:"Oswald, sans-serif",color:"blue"}}>
+          <div>WSPV OPPURTUNITY</div>
+          <div>SUCCESS STORIES</div>
+          <div>GALLERY</div>
+          <div>LEGAL</div>
+          <div>GRIEVANCE CELL</div>
+          </div>
+          </div>
+          <div className="last">
+          <div style={{fontSize:"40px",fontFamily:"Oswald, sans-serif"}}>COMPANY</div>
+          <div  style={{fontSize:"12px",fontFamily:"Oswald, sans-serif",color:"blue"}}>
+          <div>WSPV OPPURTUNITY</div>
+          <div>SUCCESS STORIES</div>
+          <div>GALLERY</div>
+          <div>LEGAL</div>
+          <div>GRIEVANCE CELL</div>
+          </div>
+          </div>
+
+          <div className="last">
+          <div style={{fontSize:"40px",fontFamily:"Oswald, sans-serif"}}>PRODUCT</div>
+          <div  style={{fontSize:"12px",fontFamily:"Oswald, sans-serif",color:"blue"}}>
+          <div>WSPV OPPURTUNITY</div>
+          <div>SUCCESS STORIES</div>
+          <div>GALLERY</div>
+          <div>LEGAL</div>
+          <div>GRIEVANCE CELL</div>
+          </div>
+          </div>
+      </div>
     </div>
   );
   }
